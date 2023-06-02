@@ -24,6 +24,6 @@ e) ```qfr_400m_2Ben.npy```: A ($N_{parquet}$, 3) shaped numpy file that contains
   
 np.save(f'./{RESULT_DIR}/qfr_400m_2Ben.npy',qfr_all)
 ```
-2: ```df_parquet_400m_2b.csv```
+2: ```df_parquet_400m_2b.csv```: A 160 x 4 shaped input file-name dataframe whose ```file_loc``` column has the precise order of the 160 (=32 + 128) parquet files that will be used to index the results.
 
-3: ```df_qfr_filewise_400M_2B.csv```
+3: ```df_qfr_filewise_400M_2B.csv```: A 160 x 3 output QFR dataframe whose rows map to the 160 parquet files listed in the ```file_loc``` column of ```df_parquet_400m_2b.csv``` and the columns map to the QFR at 0.5 values mapping to ```[P_hateful,P_targeted,P_aggressive]```
