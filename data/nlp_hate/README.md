@@ -28,6 +28,6 @@ np.save(f'./{RESULT_DIR}/qfr_400m_2Ben.npy',qfr_all)
 
 3: ```df_qfr_filewise_400M_2B.csv```: A 160 x 3 output QFR dataframe whose rows map to the 160 parquet files listed in the ```file_loc``` column of ```df_parquet_400m_2b.csv``` and the columns map to the QFR at 0.5 values mapping to ```[P_hateful,P_targeted,P_aggressive]```
 
-4: ```df_summary_filewise_400M_2B.csv``` : A summary (160, 8) shaped dataframe that is a concatenation of ```df_parquet_400m_2b.csv``` & ```df_qfr_filewise_400M_2B.csv``` and a ```file_ind``` column that allows you index the assets from [here](https://hal.cse.msu.edu/assets/data/papers/hate_detect_laion_400m_2B-en.zip)
+4: ```df_summary_filewise_400M_2B.csv``` : A summary (160, 8) shaped dataframe that is a concatenation of ```df_parquet_400m_2b.csv``` & ```df_qfr_filewise_400M_2B.csv``` and a ```file_ind``` column that allows you index the 640 meta-data assets download in (1) above from [here](https://hal.cse.msu.edu/assets/data/papers/hate_detect_laion_400m_2B-en.zip)
 
 
